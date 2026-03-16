@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I'm Sorry Dear ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#ffc0cb,#ffd6e7);
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+margin-top:120px;
+}
+
+h1{
+color:#ff2e88;
+font-size:50px;
+}
+
+p{
+font-size:22px;
+color:#444;
+}
+
+button{
+padding:14px 28px;
+border:none;
+border-radius:30px;
+background:#ff5fa2;
+color:white;
+font-size:18px;
+margin:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff2e88;
+}
+
+.heart{
+position:absolute;
+color:#ff6fa9;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);}
+}
+
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4b6c9b4a28.mp3">
+</audio>
+
+<div class="container">
+
+<h1>I'm Really Sorry 🥺❤️</h1>
+
+<img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" width="220">
+
+<p>
+I hate that we fought.  
+You are always so sweet and caring towards me.  
+And I truly regret hurting you.
+I m really sorry for my actions and words my love.
+I hope you will forgive me, and be my bubbu again✨
+</p>
+
+<button onclick="location.href='message.html'">My Apology 💌</button>
+<button onclick="location.href='cute.html'">Something Cute 🧸</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<30;i++){
+let heart=document.createElement("div");
+heart.innerHTML="💗";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+heart.style.animationDuration=(3+Math.random()*5)+"s";
+document.body.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forgive Me?</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(#ffd6e7,#ffc0cb);
+text-align:center;
+padding-top:100px;
+}
+
+h1{
+color:#ff2e88;
+}
+
+button{
+padding:14px 28px;
+border:none;
+border-radius:25px;
+font-size:18px;
+margin:15px;
+cursor:pointer;
+}
+
+#yes{
+background:#ff5fa2;
+color:white;
+}
+
+#no{
+background:#888;
+color:white;
+position:absolute;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Will You Forgive Me? 🥺💗</h1>
+
+<img src="https://media.tenor.com/jU9c9w82GKAAAAAC/love-bear.gif" width="220" alt="cute bear">
+
+<br><br>
+
+<button id="yes" onclick="alert('Yay!! Thank you ❤️')">Yes 💗</button>
+<button id="no">No 😅</button>
+
+<script>
+
+let noBtn=document.getElementById("no");
+
+noBtn.addEventListener("mouseover",function(){
+noBtn.style.top=Math.random()*400+"px";
+noBtn.style.left=Math.random()*400+"px";
+});
+
+</script>
+
+</body>
+</html>
